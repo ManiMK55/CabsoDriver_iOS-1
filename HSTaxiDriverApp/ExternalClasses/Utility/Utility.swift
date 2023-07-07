@@ -188,6 +188,7 @@ class Utility: NSObject {
     func getStatusService()  {
         let signinServiceObj = LoginWebServices()
         let phoneNo = UserModel.shared.getUserDetails().value(forKey: "phone_number") as? String ?? "\(UserModel.shared.getUserDetails().value(forKey: "phone_number") as? NSNumber ?? 0)"
+        print(phoneNo)
 
         signinServiceObj.signInService(email:  UserModel.shared.getUserDetails().value(forKey: "email") as! String, password: UserModel.shared.getPassword()! as String,country_code:UserModel.shared.getUserDetails().value(forKey: "country_code") as! String,phone_no:phoneNo,type:"withphone",onSuccess: {response in
             HPLActivityHUD.dismiss()
