@@ -13,8 +13,8 @@ class UploadServices: BaseWebService {
 
     //MARK: upload profile pic service
     public func uploadProfilePic(profileimage:Data, onSuccess success: @escaping (NSDictionary) -> Void) {
-        let BaseUrl = URL(string: BASE_URL+PROFILE_PIC_API)
-        print("BASE URL : \(BASE_URL+PROFILE_PIC_API)")
+        let BaseUrl = URL(string: demoBaseUrl+PROFILE_PIC_API)
+        print("BASE URL : \(demoBaseUrl+PROFILE_PIC_API)")
         let parameters = ["user_id": UserModel.shared.userID()!]
         print("REQUEST : \(parameters)")
         
@@ -49,8 +49,8 @@ class UploadServices: BaseWebService {
     }
     //MARK: upload driver document like license,rcbook,insurance
     public func uploadDoc(fileData:Data,uploaddocfor:String,uploaddoctype:String,fileName:String, onSuccess success: @escaping (NSDictionary) -> Void) {
-        let BaseUrl = URL(string: BASE_URL+UPLOAD_DOC)
-        print("BASE URL : \(BASE_URL+UPLOAD_DOC)")
+        let BaseUrl = URL(string: demoBaseUrl+UPLOAD_DOC)
+        print("BASE URL : \(demoBaseUrl+UPLOAD_DOC)")
         let parameters = ["user_id": UserModel.shared.userID()!,"uploaddocfor":uploaddocfor] as [String : Any]
 
         print("REQUEST : \(parameters)")

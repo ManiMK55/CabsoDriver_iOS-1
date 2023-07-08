@@ -25,6 +25,7 @@ let APP_RTC_URL = "YOUR_APP_RTC_URL"
 //MARK: API Details
 //Base URL
 let BASE_URL = "https://towingsos.com:3000/driverapi/"
+let demoBaseUrl = "http://testcabso.riddhi.info:3000/driverapi/"
 
 let DEVICE_MODE = "1"
 

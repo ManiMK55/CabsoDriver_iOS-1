@@ -161,9 +161,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
             acceptObj.pickup_lng = notifyDict.value(forKey: "pickup_lng")as! String
             acceptObj.pickup_location = notifyDict.value(forKey: "pickup_location") as! String
             acceptObj.drop_location = notifyDict.value(forKey: "drop_location") as! String
-            acceptObj.car_make = notifyDict.value(forKey: "Make") as! String
-            acceptObj.car_model = notifyDict.value(forKey: "Model") as! String
-            acceptObj.car_color = notifyDict.value(forKey: "Color") as! String
+            acceptObj.car_make = notifyDict.value(forKey: "make") as! String
+            acceptObj.car_model = notifyDict.value(forKey: "model") as! String
+            acceptObj.car_color = notifyDict.value(forKey: "color") as! String
             acceptObj.miles_travel = notifyDict.value(forKey: "distance") as! String
             acceptObj.travel_price = notifyDict.value(forKey: "baseprice") as! String
             acceptObj.payment_method = notifyDict.value(forKey: "payment_type") as! String
